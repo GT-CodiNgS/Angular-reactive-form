@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {FormControl, FormGroup, Validators} from "@angular/forms";
+import validate = WebAssembly.validate;
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,29 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular';
+
+// loginForm= new FormGroup({
+//   email:new FormControl(
+//     '',[
+//       Validators.email,
+//       Validators.required
+//     ]
+//   ),
+//   password:new FormControl(
+//
+//     '',[
+//       Validators.min(5),
+//       Validators.max(5),
+//       Validators.required
+//     ]
+//   )
+// });
+//
+//
+//   login(){
+//     console.log(this.loginForm.get('email'))
+//     console.log(this.loginForm.get('password'))
+//
+//   }
+
 }
